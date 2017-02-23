@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		077BB06E1E5B8DB7006385BF /* TCFilm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077BB06C1E5B8DB7006385BF /* TCFilm.swift */; };
+		077BB06F1E5B8DB7006385BF /* TCFilm.xib in Resources */ = {isa = PBXBuildFile; fileRef = 077BB06D1E5B8DB7006385BF /* TCFilm.xib */; };
+		077BB0731E5BA312006385BF /* VLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077BB0711E5BA312006385BF /* VLoading.swift */; };
+		077BB0741E5BA312006385BF /* VLoading.xib in Resources */ = {isa = PBXBuildFile; fileRef = 077BB0721E5BA312006385BF /* VLoading.xib */; };
+		077CE9A01E5CF40100FDBBA9 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 077CE99E1E5CF40100FDBBA9 /* Realm.framework */; };
+		077CE9A11E5CF40100FDBBA9 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 077CE99E1E5CF40100FDBBA9 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		077CE9A21E5CF40100FDBBA9 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 077CE99F1E5CF40100FDBBA9 /* RealmSwift.framework */; };
+		077CE9A31E5CF40100FDBBA9 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 077CE99F1E5CF40100FDBBA9 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		077CE9A61E5D15DD00FDBBA9 /* Main.xib in Resources */ = {isa = PBXBuildFile; fileRef = 077CE9A51E5D15DD00FDBBA9 /* Main.xib */; };
+		F12AB2491E5A0006005D550B /* PesquisaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12AB2471E5A0006005D550B /* PesquisaController.swift */; };
+		F12AB24A1E5A0006005D550B /* PesquisaController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F12AB2481E5A0006005D550B /* PesquisaController.xib */; };
+		F12AB24F1E5A01A4005D550B /* MeusFilmesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12AB24D1E5A01A4005D550B /* MeusFilmesController.swift */; };
+		F12AB2501E5A01A4005D550B /* MeusFilmesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F12AB24E1E5A01A4005D550B /* MeusFilmesController.xib */; };
+		F12AB2551E5A08A7005D550B /* DetalhesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12AB2531E5A08A7005D550B /* DetalhesController.swift */; };
+		F12AB2561E5A08A7005D550B /* DetalhesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F12AB2541E5A08A7005D550B /* DetalhesController.xib */; };
+		F188A01B1E57F4970025F6D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F188A01A1E57F4970025F6D7 /* AppDelegate.swift */; };
+		F188A0221E57F4970025F6D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F188A0211E57F4970025F6D7 /* Assets.xcassets */; };
+		F188A0251E57F4970025F6D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F188A0231E57F4970025F6D7 /* LaunchScreen.storyboard */; };
+		F1DB4B3C1E5D545900F0636E /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DB4B3B1E5D545900F0636E /* iCarousel.m */; };
+		F1F316C91E5A5AAD00A9A2C2 /* FilmSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F316C81E5A5AAD00A9A2C2 /* FilmSearch.swift */; };
+		F1F316CC1E5A5EA800A9A2C2 /* ServiceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F316CB1E5A5EA800A9A2C2 /* ServiceResponse.swift */; };
+		F1F316CE1E5A5ED500A9A2C2 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F316CD1E5A5ED500A9A2C2 /* Service.swift */; };
+		F1F316E81E5A607600A9A2C2 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F316D51E5A607600A9A2C2 /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F1F316E91E5A607600A9A2C2 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F316D81E5A607600A9A2C2 /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F1F316EA1E5A607600A9A2C2 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F316DA1E5A607600A9A2C2 /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F1F316EB1E5A607600A9A2C2 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F316DC1E5A607600A9A2C2 /* ASIDownloadCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F1F316EC1E5A607600A9A2C2 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F316DE1E5A607600A9A2C2 /* ASIFormDataRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F1F316ED1E5A607600A9A2C2 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F316E01E5A607600A9A2C2 /* ASIHTTPRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F1F316EE1E5A607600A9A2C2 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F316E41E5A607600A9A2C2 /* ASIInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F1F316EF1E5A607600A9A2C2 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F316E61E5A607600A9A2C2 /* ASINetworkQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F1F316F21E5A60C400A9A2C2 /* ImageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F316F11E5A60C400A9A2C2 /* ImageUtils.swift */; };
+		F1F316F41E5A655000A9A2C2 /* FilmDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F316F31E5A655000A9A2C2 /* FilmDetails.swift */; };
+		F1F316FF1E5A6F3900A9A2C2 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F316FE1E5A6F3900A9A2C2 /* Reachability.m */; };
+		F1F317021E5A704200A9A2C2 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F317011E5A704200A9A2C2 /* libz.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		077CE9A41E5CF40100FDBBA9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				077CE9A31E5CF40100FDBBA9 /* RealmSwift.framework in Embed Frameworks */,
+				077CE9A11E5CF40100FDBBA9 /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		077BB06C1E5B8DB7006385BF /* TCFilm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCFilm.swift; sourceTree = "<group>"; };
+		077BB06D1E5B8DB7006385BF /* TCFilm.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TCFilm.xib; sourceTree = "<group>"; };
+		077BB0711E5BA312006385BF /* VLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VLoading.swift; sourceTree = "<group>"; };
+		077BB0721E5BA312006385BF /* VLoading.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VLoading.xib; sourceTree = "<group>"; };
+		077CE99E1E5CF40100FDBBA9 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = ProvaZup/Libs/Realm.framework; sourceTree = "<group>"; };
+		077CE99F1E5CF40100FDBBA9 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = ProvaZup/Libs/RealmSwift.framework; sourceTree = "<group>"; };
+		077CE9A51E5D15DD00FDBBA9 /* Main.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Main.xib; sourceTree = "<group>"; };
+		F12AB2471E5A0006005D550B /* PesquisaController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PesquisaController.swift; sourceTree = "<group>"; };
+		F12AB2481E5A0006005D550B /* PesquisaController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PesquisaController.xib; sourceTree = "<group>"; };
+		F12AB24D1E5A01A4005D550B /* MeusFilmesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeusFilmesController.swift; sourceTree = "<group>"; };
+		F12AB24E1E5A01A4005D550B /* MeusFilmesController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeusFilmesController.xib; sourceTree = "<group>"; };
+		F12AB2531E5A08A7005D550B /* DetalhesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalhesController.swift; sourceTree = "<group>"; };
+		F12AB2541E5A08A7005D550B /* DetalhesController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetalhesController.xib; sourceTree = "<group>"; };
+		F188A0171E57F4970025F6D7 /* ProvaZup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProvaZup.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F188A01A1E57F4970025F6D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F188A0211E57F4970025F6D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F188A0241E57F4970025F6D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F188A0261E57F4970025F6D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F188A02F1E57F4980025F6D7 /* ProvaZupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvaZupTests.swift; sourceTree = "<group>"; };
+		F188A0311E57F4980025F6D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F188A03A1E57F4980025F6D7 /* ProvaZupUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvaZupUITests.swift; sourceTree = "<group>"; };
+		F188A03C1E57F4980025F6D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1DB4B3A1E5D545900F0636E /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iCarousel.h; path = iCarousel/iCarousel.h; sourceTree = "<group>"; };
+		F1DB4B3B1E5D545900F0636E /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iCarousel.m; path = iCarousel/iCarousel.m; sourceTree = "<group>"; };
+		F1F316C81E5A5AAD00A9A2C2 /* FilmSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilmSearch.swift; sourceTree = "<group>"; };
+		F1F316CB1E5A5EA800A9A2C2 /* ServiceResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceResponse.swift; sourceTree = "<group>"; };
+		F1F316CD1E5A5ED500A9A2C2 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		F1F316D41E5A607600A9A2C2 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIAuthenticationDialog.h; path = ASIHttpRequest/ASIAuthenticationDialog.h; sourceTree = "<group>"; };
+		F1F316D51E5A607600A9A2C2 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIAuthenticationDialog.m; path = ASIHttpRequest/ASIAuthenticationDialog.m; sourceTree = "<group>"; };
+		F1F316D61E5A607600A9A2C2 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASICacheDelegate.h; path = ASIHttpRequest/ASICacheDelegate.h; sourceTree = "<group>"; };
+		F1F316D71E5A607600A9A2C2 /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIDataCompressor.h; path = ASIHttpRequest/ASIDataCompressor.h; sourceTree = "<group>"; };
+		F1F316D81E5A607600A9A2C2 /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIDataCompressor.m; path = ASIHttpRequest/ASIDataCompressor.m; sourceTree = "<group>"; };
+		F1F316D91E5A607600A9A2C2 /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIDataDecompressor.h; path = ASIHttpRequest/ASIDataDecompressor.h; sourceTree = "<group>"; };
+		F1F316DA1E5A607600A9A2C2 /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIDataDecompressor.m; path = ASIHttpRequest/ASIDataDecompressor.m; sourceTree = "<group>"; };
+		F1F316DB1E5A607600A9A2C2 /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIDownloadCache.h; path = ASIHttpRequest/ASIDownloadCache.h; sourceTree = "<group>"; };
+		F1F316DC1E5A607600A9A2C2 /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIDownloadCache.m; path = ASIHttpRequest/ASIDownloadCache.m; sourceTree = "<group>"; };
+		F1F316DD1E5A607600A9A2C2 /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIFormDataRequest.h; path = ASIHttpRequest/ASIFormDataRequest.h; sourceTree = "<group>"; };
+		F1F316DE1E5A607600A9A2C2 /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIFormDataRequest.m; path = ASIHttpRequest/ASIFormDataRequest.m; sourceTree = "<group>"; };
+		F1F316DF1E5A607600A9A2C2 /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequest.h; path = ASIHttpRequest/ASIHTTPRequest.h; sourceTree = "<group>"; };
+		F1F316E01E5A607600A9A2C2 /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIHTTPRequest.m; path = ASIHttpRequest/ASIHTTPRequest.m; sourceTree = "<group>"; };
+		F1F316E11E5A607600A9A2C2 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequestConfig.h; path = ASIHttpRequest/ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		F1F316E21E5A607600A9A2C2 /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequestDelegate.h; path = ASIHttpRequest/ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		F1F316E31E5A607600A9A2C2 /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIInputStream.h; path = ASIHttpRequest/ASIInputStream.h; sourceTree = "<group>"; };
+		F1F316E41E5A607600A9A2C2 /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIInputStream.m; path = ASIHttpRequest/ASIInputStream.m; sourceTree = "<group>"; };
+		F1F316E51E5A607600A9A2C2 /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASINetworkQueue.h; path = ASIHttpRequest/ASINetworkQueue.h; sourceTree = "<group>"; };
+		F1F316E61E5A607600A9A2C2 /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASINetworkQueue.m; path = ASIHttpRequest/ASINetworkQueue.m; sourceTree = "<group>"; };
+		F1F316E71E5A607600A9A2C2 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIProgressDelegate.h; path = ASIHttpRequest/ASIProgressDelegate.h; sourceTree = "<group>"; };
+		F1F316F11E5A60C400A9A2C2 /* ImageUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUtils.swift; sourceTree = "<group>"; };
+		F1F316F31E5A655000A9A2C2 /* FilmDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilmDetails.swift; sourceTree = "<group>"; };
+		F1F316F51E5A69DE00A9A2C2 /* ProvaZup-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ProvaZup-Bridging-Header.h"; sourceTree = "<group>"; };
+		F1F316FD1E5A6F3900A9A2C2 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = Reachability/Reachability.h; sourceTree = "<group>"; };
+		F1F316FE1E5A6F3900A9A2C2 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Reachability/Reachability.m; sourceTree = "<group>"; };
+		F1F317011E5A704200A9A2C2 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F188A0141E57F4960025F6D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				077CE9A01E5CF40100FDBBA9 /* Realm.framework in Frameworks */,
+				F1F317021E5A704200A9A2C2 /* libz.tbd in Frameworks */,
+				077CE9A21E5CF40100FDBBA9 /* RealmSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		077BB0701E5BA2CF006385BF /* VLoading */ = {
+			isa = PBXGroup;
+			children = (
+				077BB0711E5BA312006385BF /* VLoading.swift */,
+				077BB0721E5BA312006385BF /* VLoading.xib */,
+			);
+			name = VLoading;
+			sourceTree = "<group>";
+		};
+		F12AB2511E5A082D005D550B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				077BB0701E5BA2CF006385BF /* VLoading */,
+				F12AB2471E5A0006005D550B /* PesquisaController.swift */,
+				F12AB2481E5A0006005D550B /* PesquisaController.xib */,
+				F12AB24D1E5A01A4005D550B /* MeusFilmesController.swift */,
+				F12AB24E1E5A01A4005D550B /* MeusFilmesController.xib */,
+				F12AB2531E5A08A7005D550B /* DetalhesController.swift */,
+				F12AB2541E5A08A7005D550B /* DetalhesController.xib */,
+				077BB06C1E5B8DB7006385BF /* TCFilm.swift */,
+				077BB06D1E5B8DB7006385BF /* TCFilm.xib */,
+				077CE9A51E5D15DD00FDBBA9 /* Main.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		F12AB2521E5A084E005D550B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F1F316C81E5A5AAD00A9A2C2 /* FilmSearch.swift */,
+				F1F316F31E5A655000A9A2C2 /* FilmDetails.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F188A00E1E57F4960025F6D7 = {
+			isa = PBXGroup;
+			children = (
+				077CE99E1E5CF40100FDBBA9 /* Realm.framework */,
+				077CE99F1E5CF40100FDBBA9 /* RealmSwift.framework */,
+				F188A0191E57F4970025F6D7 /* ProvaZup */,
+				F188A02E1E57F4980025F6D7 /* ProvaZupTests */,
+				F188A0391E57F4980025F6D7 /* ProvaZupUITests */,
+				F188A0181E57F4970025F6D7 /* Products */,
+				F1F317001E5A704200A9A2C2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F188A0181E57F4970025F6D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F188A0171E57F4970025F6D7 /* ProvaZup.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F188A0191E57F4970025F6D7 /* ProvaZup */ = {
+			isa = PBXGroup;
+			children = (
+				F1F316F01E5A60AC00A9A2C2 /* Util */,
+				F1F316CF1E5A5FF900A9A2C2 /* libs */,
+				F1F316CA1E5A5E9600A9A2C2 /* Service */,
+				F12AB2521E5A084E005D550B /* Model */,
+				F12AB2511E5A082D005D550B /* Views */,
+				F188A01A1E57F4970025F6D7 /* AppDelegate.swift */,
+				F188A0211E57F4970025F6D7 /* Assets.xcassets */,
+				F188A0231E57F4970025F6D7 /* LaunchScreen.storyboard */,
+				F188A0261E57F4970025F6D7 /* Info.plist */,
+			);
+			path = ProvaZup;
+			sourceTree = "<group>";
+		};
+		F188A02E1E57F4980025F6D7 /* ProvaZupTests */ = {
+			isa = PBXGroup;
+			children = (
+				F188A02F1E57F4980025F6D7 /* ProvaZupTests.swift */,
+				F188A0311E57F4980025F6D7 /* Info.plist */,
+			);
+			path = ProvaZupTests;
+			sourceTree = "<group>";
+		};
+		F188A0391E57F4980025F6D7 /* ProvaZupUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F188A03A1E57F4980025F6D7 /* ProvaZupUITests.swift */,
+				F188A03C1E57F4980025F6D7 /* Info.plist */,
+			);
+			path = ProvaZupUITests;
+			sourceTree = "<group>";
+		};
+		F1DB4B361E5D53C200F0636E /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				F1DB4B3A1E5D545900F0636E /* iCarousel.h */,
+				F1DB4B3B1E5D545900F0636E /* iCarousel.m */,
+			);
+			name = iCarousel;
+			sourceTree = "<group>";
+		};
+		F1F316CA1E5A5E9600A9A2C2 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F1F316CB1E5A5EA800A9A2C2 /* ServiceResponse.swift */,
+				F1F316CD1E5A5ED500A9A2C2 /* Service.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		F1F316CF1E5A5FF900A9A2C2 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				F1DB4B361E5D53C200F0636E /* iCarousel */,
+				F1F316F81E5A6F0D00A9A2C2 /* Reachability */,
+				F1F316D21E5A606000A9A2C2 /* ASIHTTPRequest */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+		F1F316D21E5A606000A9A2C2 /* ASIHTTPRequest */ = {
+			isa = PBXGroup;
+			children = (
+				F1F316D41E5A607600A9A2C2 /* ASIAuthenticationDialog.h */,
+				F1F316D51E5A607600A9A2C2 /* ASIAuthenticationDialog.m */,
+				F1F316D61E5A607600A9A2C2 /* ASICacheDelegate.h */,
+				F1F316D71E5A607600A9A2C2 /* ASIDataCompressor.h */,
+				F1F316D81E5A607600A9A2C2 /* ASIDataCompressor.m */,
+				F1F316D91E5A607600A9A2C2 /* ASIDataDecompressor.h */,
+				F1F316DA1E5A607600A9A2C2 /* ASIDataDecompressor.m */,
+				F1F316DB1E5A607600A9A2C2 /* ASIDownloadCache.h */,
+				F1F316DC1E5A607600A9A2C2 /* ASIDownloadCache.m */,
+				F1F316DD1E5A607600A9A2C2 /* ASIFormDataRequest.h */,
+				F1F316DE1E5A607600A9A2C2 /* ASIFormDataRequest.m */,
+				F1F316DF1E5A607600A9A2C2 /* ASIHTTPRequest.h */,
+				F1F316E01E5A607600A9A2C2 /* ASIHTTPRequest.m */,
+				F1F316E11E5A607600A9A2C2 /* ASIHTTPRequestConfig.h */,
+				F1F316E21E5A607600A9A2C2 /* ASIHTTPRequestDelegate.h */,
+				F1F316E31E5A607600A9A2C2 /* ASIInputStream.h */,
+				F1F316E41E5A607600A9A2C2 /* ASIInputStream.m */,
+				F1F316E51E5A607600A9A2C2 /* ASINetworkQueue.h */,
+				F1F316E61E5A607600A9A2C2 /* ASINetworkQueue.m */,
+				F1F316E71E5A607600A9A2C2 /* ASIProgressDelegate.h */,
+			);
+			name = ASIHTTPRequest;
+			sourceTree = "<group>";
+		};
+		F1F316F01E5A60AC00A9A2C2 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				F1F316F51E5A69DE00A9A2C2 /* ProvaZup-Bridging-Header.h */,
+				F1F316F11E5A60C400A9A2C2 /* ImageUtils.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		F1F316F81E5A6F0D00A9A2C2 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				F1F316FD1E5A6F3900A9A2C2 /* Reachability.h */,
+				F1F316FE1E5A6F3900A9A2C2 /* Reachability.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		F1F317001E5A704200A9A2C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1F317011E5A704200A9A2C2 /* libz.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F188A0161E57F4960025F6D7 /* ProvaZup */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F188A03F1E57F4980025F6D7 /* Build configuration list for PBXNativeTarget "ProvaZup" */;
+			buildPhases = (
+				F188A0131E57F4960025F6D7 /* Sources */,
+				F188A0141E57F4960025F6D7 /* Frameworks */,
+				F188A0151E57F4960025F6D7 /* Resources */,
+				077CE9A41E5CF40100FDBBA9 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProvaZup;
+			productName = ProvaZup;
+			productReference = F188A0171E57F4970025F6D7 /* ProvaZup.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F188A00F1E57F4960025F6D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Diego;
+				TargetAttributes = {
+					F188A0161E57F4960025F6D7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F188A0121E57F4960025F6D7 /* Build configuration list for PBXProject "ProvaZup" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F188A00E1E57F4960025F6D7;
+			productRefGroup = F188A0181E57F4970025F6D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F188A0161E57F4960025F6D7 /* ProvaZup */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F188A0151E57F4960025F6D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F188A0251E57F4970025F6D7 /* LaunchScreen.storyboard in Resources */,
+				F188A0221E57F4970025F6D7 /* Assets.xcassets in Resources */,
+				F12AB2501E5A01A4005D550B /* MeusFilmesController.xib in Resources */,
+				F12AB24A1E5A0006005D550B /* PesquisaController.xib in Resources */,
+				077BB0741E5BA312006385BF /* VLoading.xib in Resources */,
+				077BB06F1E5B8DB7006385BF /* TCFilm.xib in Resources */,
+				077CE9A61E5D15DD00FDBBA9 /* Main.xib in Resources */,
+				F12AB2561E5A08A7005D550B /* DetalhesController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F188A0131E57F4960025F6D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F12AB2491E5A0006005D550B /* PesquisaController.swift in Sources */,
+				077BB0731E5BA312006385BF /* VLoading.swift in Sources */,
+				F1F316E81E5A607600A9A2C2 /* ASIAuthenticationDialog.m in Sources */,
+				F1F316F21E5A60C400A9A2C2 /* ImageUtils.swift in Sources */,
+				F1F316CE1E5A5ED500A9A2C2 /* Service.swift in Sources */,
+				F1F316E91E5A607600A9A2C2 /* ASIDataCompressor.m in Sources */,
+				F12AB2551E5A08A7005D550B /* DetalhesController.swift in Sources */,
+				F1F316CC1E5A5EA800A9A2C2 /* ServiceResponse.swift in Sources */,
+				F1F316EE1E5A607600A9A2C2 /* ASIInputStream.m in Sources */,
+				F1F316ED1E5A607600A9A2C2 /* ASIHTTPRequest.m in Sources */,
+				F1F316C91E5A5AAD00A9A2C2 /* FilmSearch.swift in Sources */,
+				F1F316EC1E5A607600A9A2C2 /* ASIFormDataRequest.m in Sources */,
+				F1DB4B3C1E5D545900F0636E /* iCarousel.m in Sources */,
+				F1F316EB1E5A607600A9A2C2 /* ASIDownloadCache.m in Sources */,
+				F188A01B1E57F4970025F6D7 /* AppDelegate.swift in Sources */,
+				F12AB24F1E5A01A4005D550B /* MeusFilmesController.swift in Sources */,
+				F1F316F41E5A655000A9A2C2 /* FilmDetails.swift in Sources */,
+				F1F316EA1E5A607600A9A2C2 /* ASIDataDecompressor.m in Sources */,
+				077BB06E1E5B8DB7006385BF /* TCFilm.swift in Sources */,
+				F1F316FF1E5A6F3900A9A2C2 /* Reachability.m in Sources */,
+				F1F316EF1E5A607600A9A2C2 /* ASINetworkQueue.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F188A0231E57F4970025F6D7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F188A0241E57F4970025F6D7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F188A03D1E57F4980025F6D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F188A03E1E57F4980025F6D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F188A0401E57F4980025F6D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/ProvaZup/Libs",
+				);
+				INFOPLIST_FILE = ProvaZup/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = diego.ProvaZup;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ProvaZup/ProvaZup-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F188A0411E57F4980025F6D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/ProvaZup/Libs",
+				);
+				INFOPLIST_FILE = ProvaZup/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = diego.ProvaZup;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ProvaZup/ProvaZup-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F188A0121E57F4960025F6D7 /* Build configuration list for PBXProject "ProvaZup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F188A03D1E57F4980025F6D7 /* Debug */,
+				F188A03E1E57F4980025F6D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F188A03F1E57F4980025F6D7 /* Build configuration list for PBXNativeTarget "ProvaZup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F188A0401E57F4980025F6D7 /* Debug */,
+				F188A0411E57F4980025F6D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F188A00F1E57F4960025F6D7 /* Project object */;
+}
